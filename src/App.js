@@ -1,25 +1,49 @@
 import React from "react";
 import "./styles/App.css";
-import im from './images/airpods.jpg';
+import Card from "./components/Card";
+import image1 from './images/S852I.jpg';
+import image2 from './images/earpods1.jpg';
+import image3 from './images/earpods2.jpg';
+
 
 function App() {
+
+  const headphones = [{img: image1,
+                       title:'Apple BYZ S852I',
+                       price:'2927',
+                       rate:'4.7'},
+                    
+                      {img: image2,
+                        title:'Apple EarPods',
+                        price:'2327',
+                        rate:'4.5'},
+                      
+                      {img: image3,
+                        title:'Apple EarPods',
+                        price:'2327',
+                        rate:'4.5'},
+                      
+                      {img: image1,
+                        title:'Apple BYZ S852I',
+                        price:'2927',
+                        rate:'4.7'},
+                       
+                      {img: image2,
+                        title:'Apple EarPods',
+                        price:'2327',
+                        rate:'4.5'},
+                         
+                      {img: image3,
+                        title:'Apple EarPods',
+                        price:'2327',
+                        rate:'4.5'}]
+
   return (
     <div className="App">
-      <div className="card">
-        <div className="card_content">
-          <img src={im} alt="headphones image" height='240px' width='210px'/>
-          <div className="info">
-            <div className="description">
-              <h3 className="title">Apple BYZ S852I</h3>
-              <p className="rate">4.7</p>
-            </div>
-            <div className="value_container">
-              <p className="price">2927 Р</p>
-              <button className="buy">Купить</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Card item = {{img: image1,
+                     title:'Apple BYZ S852I',
+                     price:'2927',
+                     rate:'4.7'}}/>
     </div>
   );
 }

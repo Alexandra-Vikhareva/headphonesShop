@@ -35,6 +35,7 @@ html{
 }
 
 .card{
+    margin: 30px;
     width: 350px;
     height: 407px;   
     border-radius: 30px; 
