@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/App.css";
 
 const Card = (props) =>{
+    console.log('kdjvhsdiv', props)
     return(
         <div className="card">
             <div className="card_content">
